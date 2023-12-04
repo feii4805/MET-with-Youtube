@@ -1,0 +1,65 @@
+body {
+    background-color: #ffe2e2; /* Light grey background */
+    margin: 0;
+    padding-top: 50px; /* Adjust this value to the height of your header */
+  }
+  
+  h1 {
+    background-color: #ff6666; /* Light red background */
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    margin: 0;
+    z-index: 10;
+  }
+  
+  form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    margin: auto;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width as necessary */
+    max-width: 400px; /* Adjust max width as necessary */
+  }
+  
+  .category {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #e7eff6; /* Light blue background */
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffcccc; /* Light pink background */
+    color: black;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff9999; /* Slightly darker pink on hover */
+  }
+  

@@ -1,0 +1,133 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f2efe5; /* Adjust the background color as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #artContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #artImage {
+    width: 300px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
+    background-color: #e8d5d5; /* Placeholder for the image */
+    margin-bottom: 100px; /* Space between image and buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Adjust the size as needed */
+    transition: opacity 0.5s, transform 0.5s; /* Add this line */
+  }
+  
+  #dislikeButton, #likeButton {
+    width: 50px; /* Circle size */
+    height: 50px; /* Circle size */
+    border-radius: 50%; /* Make it round */
+    border: none;
+    color: white;
+    font-size: 24px; /* Icon size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -25px; /* Half outside the container */
+  }
+  
+
+  #dislikeButton {
+    background-color: #9999ff; /* Light blue */
+    left: calc(50% - 100px); /* Position from the right */
+  }
+  
+  
+  #likeButton {
+    background-color: #ff9999; /* Light red */
+    right: calc(50% - 100px); /* Position from the left */
+   
+  }
+  
+ 
+  #artInfoContainer {
+    position: absolute;
+    top: 100%; /* Below the image */
+    left: 50%; /* Center the container */
+    transform: translateX(-50%); /* Adjust for the container's width */
+    width: 100%; /* Make container full width */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Space between image and info */
+}
+
+#artInfo {
+  background-color: #ffc0cb; /* Light pink background */
+  padding: 20px;
+  width: auto;
+  max-width: 800px; /* Adjust width as needed */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto; /* Center within the container */
+  margin-bottom: 10px; /* Space between info and next button */
+  box-sizing: border-box;     /* 边框和内边距包含在宽度内 */
+  word-wrap: break-word;      /* 长单词或URL会换行 */
+  overflow-wrap: break-word;  /* 确保文本换行，避免溢出 */
+  margin-bottom: 20px; 
+}
+
+  
+  #nextButton {
+    
+    background-color: #e5ddf3; /* Light grey background */
+    border: 1px solid #7a5f8c;
+    border-radius: 4px;
+    padding: 20px 35px;
+    cursor: pointer;
+    position:absolute;
+    top: 450%;
+    margin-bottom: 100px; 
+    font-size: 20px;
+
+  }
+    
+  .end-message-1{
+    color:  #7a5f8c;
+    font-weight: bold;
+    font-size: 100px;    /* 字体大小 */
+    text-align: center; /* 文本居中 */
+}
+
+.end-message-2{
+  color:  #7a5f8c;
+  font-weight: light;
+  font-size: 15px;    /* 字体大小 */
+  text-align: center; /* 文本居中 */
+}
+
+#youtubeVideosContainer {
+  position:absolute;
+  top: 110%;
+  left: 40%;
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+ 
+}
+
+.youtubeVideo {
+  margin-bottom: 100px;
+  text-align: center; 
+}
